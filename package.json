@@ -1,0 +1,8 @@
+{
+  "name": "claude-company",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Bureau pixel art qui montre en direct ce que font tes agents Claude Code",
+  "scripts": { "start": "node server.js", "mobile": "HOST=0.0.0.0 node server.js" },
+  "engines": { "node": ">=18" }
+}

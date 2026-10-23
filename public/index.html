@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#241d31">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Claude Co">
+  <title>Claude Company</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 4 4%22%3E%3Crect width=%224%22 height=%224%22 fill=%22%23d97757%22/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="logo"></span>CLAUDE COMPANY</div>
+    <div class="stats" id="stats"></div>
+    <div class="quota" id="quota"></div>
+    <div class="clock" id="clock">--:--</div>
+  </header>
+  <main class="layout">
+    <section class="floor-wrap">
+      <nav class="wings" id="wings" aria-label="Ailes du bureau"></nav>
+      <div class="floor" id="floor">
+        <div class="floor-inner" id="floor-inner">
+          <canvas id="office" width="496" height="304"></canvas>
+          <span class="snap" style="left:0"></span><span class="snap" style="left:calc(100% * 10 / 31)"></span><span class="snap" style="left:calc(100% * 20 / 31)"></span>
+        </div>
+      </div>
+      <div class="legend" id="legend"></div>
+    </section>
+    <aside class="panel">
+      <div id="detail" class="detail hidden"></div>
+      <h2>EFFECTIF</h2>
+      <ul id="roster" class="roster"></ul>
+    </aside>
+  </main>
+  <div class="backdrop" id="backdrop"></div>
+  <script src="office.js"></script>
+</body>
+</html>
